@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+:root {
+  --background: #eef3f8;
+  --foreground: #213547;
+  --sabic-blue-900: #003b73;
+  --sabic-blue-700: #0057a8;
+  --sabic-blue-100: #d8e7f8;
+  --sabic-gray-700: #5f6f7d;
+  --sabic-gray-200: #d1dae4;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-cairo);
+  --font-display: var(--font-space-grotesk);
+}
+
+body {
+  background:
+    radial-gradient(circle at 10% 12%, #e2edf9 0%, transparent 29%),
+    radial-gradient(circle at 94% 3%, #d6e6f8 0%, transparent 26%),
+    linear-gradient(160deg, #f7f9fc 0%, #eef3f8 56%, #e7edf4 100%);
+  color: var(--foreground);
+  font-family: var(--font-cairo), sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.surface-glass {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+}
+
+.panel {
+  border: 1px solid rgba(95, 111, 125, 0.18);
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 20px 42px -30px rgba(33, 53, 71, 0.32);
+}
